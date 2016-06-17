@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 
-ARG BT_VERSION
-ENV BT_VERSION $BT_VERSION
+#ARG BT_VERSION
+ENV BT_VERSION 1.10
 RUN echo "BeanstalkD version = ${BT_VERSION}"
 
 RUN apt-get update && apt-get install -y build-essential wget zip 

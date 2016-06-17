@@ -30,6 +30,7 @@ push_hub:
 	
 init:
 	git init
+	echo "$(NAME)" >> README.md	
 	git add .
 	git commit -m "first commit"
 	git remote add origin git@github.com:JINWOO-J/$(NAME).git
